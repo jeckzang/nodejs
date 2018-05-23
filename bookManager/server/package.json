@@ -1,0 +1,28 @@
+{
+    "name": "bookManagerServer",
+    "version": "1.0.0",
+    "scripts": {
+        "client": "cd ../client && yarn start",
+        "server": "nodemon server.js",
+        "buildClient": "cd ../client && yarn build",
+        "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    },
+    "dependencies": {
+        "nodemon": "^1.17.4",
+        "antd": "^3.4.1",
+        "bunyan": "^1.8.12",
+        "cookie-parser": "^1.4.3",
+        "express": "^4.16.3",
+        "express-session": "^1.15.6",
+        "oracledb": "2.2",
+        "sqlite3": "^4.0.0",
+        "react": "^16.3.1",
+        "react-dom": "^16.3.1",
+        "react-scripts": "1.1.4",
+        "request-promise": "^4.2.2",
+        "superagent": "^3.8.2"
+    },
+    "devDependencies": {
+        "concurrently": "^3.5.0"
+    }
+}
